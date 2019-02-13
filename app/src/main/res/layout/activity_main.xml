@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORTUS ELECTRICALS"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:id="@+id/ortuselexml"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Puthukkadu, Chavara, Kollam"
+                android:textSize="10dp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:id="@+id/addressxml"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Contact No.: 8547433716"
+                android:textSize="10dp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:id="@+id/mobno"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TAX INVOICE"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                />
+
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+               <TableRow
+                  android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:layout_marginLeft="5dp"
+                       android:text="GSTIN :32GCFPS7628R1ZO"
+                       android:textSize="15dp"
+                       android:textColor="#000"
+
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:text="State : Kerala [32]"
+                       android:layout_marginLeft="50dp"
+                       android:textColor="#000"
+
+                       />
+
+
+
+               </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+             android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="Inoice No.:"
+                android:textSize="15dp"
+                android:textColor="#000"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="invoice no."
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:maxLength="7"
+                android:id="@+id/invoicenoxml"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:text="Date :"
+                android:textSize="15dp"
+                android:textColor="#000"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="dd/mm/yy"
+                android:textSize="15dp"
+                android:inputType="date"
+                android:maxLines="1"
+                android:id="@+id/datexml"
+
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Customer Details:"
+              android:textSize="18dp"
+              android:textColor="#000"
+              android:textStyle="bold"
+              />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:maxLength="30"
+                android:maxLines="1"  />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address :"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:id="@+id/add1xml"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="68dp"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:id="@+id/add2xml"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No. :"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:inputType="number"
+                android:id="@+id/custmobno"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GSTIN :"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:id="@+id/custgstxml"
+               />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
